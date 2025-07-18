@@ -144,7 +144,7 @@ export default function EditInvoiceForm({
       </div>
       <div id="customer-error" aria-live="polite" aria-atomic="true">
             {state.message? ( 
-                <p className="mt-2 ml-4 text-sm text-red-500" >
+                <p className="mt-2 ml-4 text-sm text-red-500" key={state.message} >
                   {state.message}
                 </p>
               ):null}
